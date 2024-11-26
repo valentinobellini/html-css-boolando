@@ -23,7 +23,7 @@ header {
         justify-content: space-between;
         align-content: center;
         align-items: center;
-        width: 70%;
+        width: 65%;
         height: 100%;
     }
 
@@ -50,55 +50,138 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    margin-bottom: 50px;
 }
 
-#main-container {
-    width: 70%;
+    #main-container {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 120px;
+    }
+
+        .item {
+            width: 30%;
+        }
+
+            .image-container {
+                position: relative;
+            }
+
+            .image-container:hover .img-hover{
+                display:block;
+            }
+
+            .image-container img {
+                max-width: 100%;
+            }
+
+            .img-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                max-width: 100%;
+            }
+
+            .heart {
+                position: absolute;
+                top: 20px;
+                right: 0px;
+                font-size: 40px;
+                padding: 0px 10px;
+                background-color: white;
+            }
+
+            .heart:hover {
+                color: red;
+            }
+
+            .discount {
+                position: absolute;
+                bottom: 50px;
+                left: 0px;
+                font-size: 15px;
+                padding: 0px 10px;
+                background-color: rgb(255, 74, 74);
+                color: white;
+            }
+
+            .sust {
+                position: absolute;
+                bottom: 50px;
+                left: 65px;
+                font-size: 15px;
+                padding: 0px 10px;
+                background-color: rgb(47, 192, 90);
+                color: white;
+            }
+
+            .sust-6 {
+                left: 0px;
+            }
+
+            .description span, h4 {
+                    font-size: 14px;
+            }
+
+            .price {
+                color: red;
+                font-weight: 700;
+            }
+            
+            .old-price {
+                text-decoration: line-through;
+            }
+
+
+
+
+
+/* footer */
+
+footer {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 120px;
+    background-color: rgb(20, 20, 20);
+    height: 100px;
+    width: 100%;
 }
 
-.item {
-    width: 30%;
-    position: relative;
-}
 
-.image-container img {
-    max-width: 100%;
-}
+    #footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.description {
+        width: 65%;
+    }
 
-}
+        #footer-left h4 {
+            color: white;
+            font-size: 18px;
+            padding-right: 5px;
+            margin-bottom: 10px;
+        }
 
-.heart {
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    font-size: 40px;
-    padding: 0px 10px;
-    background-color: white;
-}
+        #footer-left a {
+            color: white;
+            font-size: 13px;
+            padding-right: 5px;
+        }
 
-.discount {
-    position: absolute;
-    bottom: 50px;
-    left: 0px;
-    font-size: 15px;
-    padding: 0px 10px;
-    background-color: rgb(255, 74, 74);
-}
+        #footer-right span {
+            display: inline-block;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
 
-.sust {
-    position: absolute;
-    bottom: 50px;
-    left: 65px;
-    font-size: 15px;
-    padding: 0px 10px;
-    background-color: rgb(47, 192, 90);
-}
+        #icons a {
+            color: white;
+            font-size: 18px;
+            padding-right: 5px;
+        }
 
